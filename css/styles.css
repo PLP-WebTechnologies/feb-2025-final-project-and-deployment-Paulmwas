@@ -1,0 +1,108 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: #333;
+  padding: 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+main {
+  margin-top: 20px;
+}
+
+/* Slider styles */
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slide.active {
+  display: block;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+/* Form styles */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
